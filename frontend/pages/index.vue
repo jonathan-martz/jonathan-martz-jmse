@@ -2,7 +2,8 @@
     <div class="hero py-12">
         <div class="hero-content text-center">
             <div class="max-w-lg">
-                <img src="https://cdn.jmse.cloud/avatar-2024-modified.png" class="w-32 mx-auto border-3 border-black rounded-full mb-6" alt="">
+                <img src="https://cdn.jmse.cloud/avatar-2024-modified.png"
+                    class="w-32 mx-auto border-3 border-black rounded-full mb-6" alt="">
                 <h1 class="text-3xl font-bold">Jonathan Martz</h1>
                 <p class="py-6 text-sm">
                     Ich bin ein Webentwickler aus Leidenschaft seit 2012 und entwickele moderne Web-Apps für
@@ -24,3 +25,18 @@
         </section>
     </section>
 </template>
+
+<script setup lang="ts">
+import { useHead } from '@vueuse/head';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    useHead({
+        title: 'JMSE - Jonathan Martz Software Entwicklung',
+        meta: [{
+            name: 'description',
+            content: 'Wir entwickeln Webseite und Online-Shops für Unternehmen und Händler aus dem Oberbergischen Kreis seit 2023.'
+        }]
+    });
+});
+</script>
