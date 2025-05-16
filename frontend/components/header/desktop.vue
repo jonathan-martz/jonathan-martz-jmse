@@ -3,7 +3,7 @@
     <section class="flex md:justify-center">
       <nav class="xl:flex hidden">
         <ul class="space-x-6 h-32 flex items-end">
-          <li class="btn btn-primary"><a href="/#services"><span>Startseite</span></a></li>
+          <li class="btn btn-primary"><a href="/#"><span>Startseite</span></a></li>
           <li class="btn btn-primary"><a href="/projekte"><span>Projekte</span></a></li>
           <li class="btn btn-primary"><a href="/kunden"><span>Kunden</span></a></li>
         </ul>
