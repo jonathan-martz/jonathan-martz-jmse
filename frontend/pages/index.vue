@@ -1,29 +1,37 @@
 <template>
-    <div class="hero py-12">
-        <div class="hero-content text-center">
-            <div class="max-w-lg">
-                <img src="https://cdn.jmse.cloud/avatar-2024-modified.png"
-                    class="w-32 mx-auto border-3 border-black rounded-full mb-6" alt="">
-                <h1 class="text-3xl font-bold">Jonathan Martz</h1>
-                <p class="py-6 text-sm">
-                    Ich bin ein Webentwickler aus Leidenschaft seit 2012 und entwickele moderne Web-Apps für
-                    Unternehmen aus dem Oberbergischen seit 2023. Vorher habe ich Erfahrung im E-Commerce gemacht.
-                </p>
-                <section class="actions space-x-5">
-                    <a href="tel:+491745141698" class="btn btn-primary">Jetzt anrufen</a>
-                    <a href="mailto:support@jonathan-martz.de" class="btn btn-secondary mt-2 btn-sm">Mail schreiben</a>
-                </section>
-            </div>
-        </div>
+  <section class="cta flex flex-col md:flex-row  md:justify-between justify-center space-y-3">
+    <a href="tel:+49 174 51 41 698" class="phone w-full md:w-auto btn btn-primary btn-sm">
+      +49 174 51 41 698
+    </a>
+    <a href="mailto:support@jonathan-martz.de" class="mail w-full md:w-auto btn btn-secondary btn-sm">
+      support@jonathan-martz.de
+    </a>
+  </section>
+  <div class="hero py-24">
+    <div class="hero-content text-center">
+      <div class="max-w-lg">
+        <img src="https://cdn.jmse.cloud/avatar-2024-modified.png"
+          class="w-32 mx-auto border-3 border-black rounded-full mb-6" alt="">
+        <h1 class="text-3xl font-bold">Jonathan Martz</h1>
+        <p class="py-6 text-sm">
+          Ich bin ein Webentwickler aus Leidenschaft seit 2012 und entwickele moderne Web-Apps für
+          Unternehmen aus dem Oberbergischen seit 2023. Vorher habe ich Erfahrung im E-Commerce gemacht.
+        </p>
+        <section class="actions space-x-5">
+          <a href="tel:+491745141698" class="btn btn-primary">Jetzt anrufen</a>
+          <a href="mailto:support@jonathan-martz.de" class="btn btn-secondary mt-2 btn-sm">Mail schreiben</a>
+        </section>
+      </div>
     </div>
-    <section class="bg-black pb-12">
-        <section class="h-[24rem] w-full bg-cover bg-center"
-            style="background-image: url('/unsplash/cherrydeck-rMILC1PIwM0-unsplash.jpg');">
-        </section>
-        <section class="mx-6 text-black -mt-24 min-h-24">
-            <IndexServicesOverview />
-        </section>
+  </div>
+  <section class="bg-black pb-12" id="services">
+    <section class="h-[24rem] w-full bg-cover bg-center"
+      style="background-image: url('/unsplash/cherrydeck-rMILC1PIwM0-unsplash.jpg');">
     </section>
+    <section class="mx-6 text-black -mt-24 min-h-24">
+      <IndexServicesOverview />
+    </section>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -31,12 +39,20 @@ import { useHead } from '@vueuse/head';
 import { onMounted } from 'vue';
 
 onMounted(() => {
-    useHead({
-        title: 'JMSE - Jonathan Martz Software Entwicklung',
-        meta: [{
-            name: 'description',
-            content: 'Wir entwickeln Webseite und Online-Shops für Unternehmen und Händler aus dem Oberbergischen Kreis seit 2023.'
-        }]
-    });
+  useHead({
+    title: 'JMSE - Jonathan Martz Software Entwicklung',
+    meta: [{
+      name: 'description',
+      content: 'Wir entwickeln Webseite und Online-Shops für Unternehmen und Händler aus dem Oberbergischen Kreis seit 2023.'
+    }],
+    link: [
+      { rel: 'manifest', href: '/manifest.webmanifest' },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: 'https://cdn.jmse.cloud/avatar-2024-modified.png'
+      }
+    ]
+  });
 });
 </script>

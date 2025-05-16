@@ -2,7 +2,6 @@
   <section class="page bg-black py-3 px-3">
     <HeaderDesktop />
     <HeaderTablet />
-    <HeaderTabletContent />
     <section>
       <FontAwesomeIcon :icon="faBars" />
     </section>

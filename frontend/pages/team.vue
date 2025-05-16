@@ -1,6 +1,6 @@
 <template>
   <div>
-    Kunden
+    Unser Team
   </div>
 </template>
 

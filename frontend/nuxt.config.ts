@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import { VitePWA } from 'vite-plugin-pwa'
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-05",
   devtools: { enabled: true },
@@ -7,6 +8,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       tailwindcss(),
+      VitePWA({ registerType: 'autoUpdate' })
     ],
   },
 

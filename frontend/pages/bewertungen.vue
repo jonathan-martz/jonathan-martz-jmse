@@ -1,6 +1,6 @@
 <template>
   <div>
-    Kunden
+    Bewertungen with quotes
   </div>
 </template>
 
