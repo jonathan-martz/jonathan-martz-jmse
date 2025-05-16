@@ -21,10 +21,10 @@
           </li>
           <!-- Sidebar content here -->
           <li><a href="/#services" @click="open = false" class="btn btn-primary">Services</a></li>
-          <li><a href="/hardware" @click="open = false" class="btn btn-primary">Hardware</a></li>
+          <li><a href="/projekte" @click="open = false" class="btn btn-primary">Projekte</a></li>
           <li><a href="/kunden" @click="open = false" class="btn btn-primary">Kunden</a></li>
           <li><a href="/team" @click="open = false" class="btn btn-primary">Unser Team</a></li>
-          <li><a href="/bewertungen" @click="open = false" class="btn btn-primary">Bewertungen</a></li>
+          <li><a href="/hardware" @click="open = false" class="btn btn-primary">Hardware</a></li>
           <li><a href="/impressum" @click="open = false" class="btn btn-primary">Impressum</a></li>
         </ul>
       </div>

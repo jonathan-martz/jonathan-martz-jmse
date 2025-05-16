@@ -45,14 +45,6 @@ onMounted(() => {
       name: 'description',
       content: 'Wir entwickeln Webseite und Online-Shops für Unternehmen und Händler aus dem Oberbergischen Kreis seit 2023.'
     }],
-    link: [
-      { rel: 'manifest', href: '/manifest.webmanifest' },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        href: 'https://cdn.jmse.cloud/avatar-2024-modified.png'
-      }
-    ]
   });
 });
 </script>
