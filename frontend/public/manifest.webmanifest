@@ -1,7 +1,7 @@
 {
-	"name": "Habit-Streak.app",
-	"short_name": "Habit-Streak",
-	"description": "Habit-Streak.app - By Jonathan Martz | Aus der Idee von Kevin Chromik wird eine Web App oder auch PWA gemacht.",
+	"name": "JMSE - Jonathan Martz Software Entwicklung",
+	"short_name": "JMSE",
+	"description": "JMSE - By Jonathan Martz",
 	"start_url": "/",
 	"display": "standalone",
 	"background_color": "#FFF",
